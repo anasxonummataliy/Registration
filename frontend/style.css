@@ -51,7 +51,7 @@ button{
     background-color: rgb(47, 214, 236);
     font-weight: 900;
     color: white;
-    box-shadow: 5px 5px 45px 1px rgb(47, 214, 236);
+    box-shadow: 2px 2px 20px 1px rgb(47, 214, 236);
     border: none;
     cursor: pointer;
     
@@ -68,9 +68,9 @@ label{
     display: flex;
     gap: 10px;
     width: 70%;
-    height: 50px;
+    height: 55px;
     align-items: center;
-    box-shadow: 4px 4px 15px 1px rgb(47, 214, 236);
+    box-shadow: 2px 2px 15px rgb(47, 214, 236);
 }
 i{
     color: rgb(47, 214, 236);
