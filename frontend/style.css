@@ -12,11 +12,11 @@ body {
 #root {
     width: 1000px;
     height: 600px;
-    border: 1px solid;
     display: flex;
     margin-top: 50px;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 5px 5px 45px  rgba(32, 166, 207, 0.5);
 
 }
 
@@ -31,7 +31,6 @@ body {
 }
 .greet{
     text-align: center;
-    color: rgb(26, 131, 176);
 
 }
 p{
@@ -40,13 +39,16 @@ p{
 
     a{
         text-decoration: none;
-        color: rgb(11, 88, 121);
+        color: rgb(0, 204, 255);
+        
     }
 }
 button{
     width: 160px;
     height: 40px;
     border-radius: 30px;
+    background-color: rgb(0, 204, 255);
+    
 }
 form{
     display: flex;
@@ -55,15 +57,18 @@ form{
     width: 100%;
 }
 label{
-    border: 1px solid;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     gap: 10px;
     width: 80%;
+    height: 50px;
+    align-items: center;
+    box-shadow: 4px 4px 15px rgba(32, 166, 207, 0.5);
 }
 i{
     color: rgb(26, 131, 176);
+    font-size: 20px;
 }
 input{
     border: none;
@@ -75,7 +80,10 @@ input{
 input:focus{
     outline: none;
 }
-
+input::placeholder{
+    color: rgb(26, 131, 176); 
+    text-shadow: 1px 1px 1px rgb(26, 131, 176) ;
+}
 .child2 {
     display: flex;
     flex-direction: column;
