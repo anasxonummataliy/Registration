@@ -43,3 +43,8 @@ async def create_account(
     return {"message" : "User saved to Json file", "user" : user}
 
 
+@app.get("/get_user_info")
+async def user_data():
+    with open ("users.json", 'r') as file :
+        result = json.load(file)
+    return result
