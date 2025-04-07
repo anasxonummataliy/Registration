@@ -35,12 +35,4 @@ form.addEventListener('submit', async (e) => {
         alert("Something went wrong");
     }
 
-    fetch("http://localhost:8000/get_user_info")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('user-name').innerText = `Name: ${data.name}`;
-            document.getElementById('user-email').innerText = `Email: ${data.email}`;
-            document.getElementById('user-password').innerText = `Password: ******`;
-        });
-
 });
