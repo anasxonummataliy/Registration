@@ -54,6 +54,7 @@ button{
     box-shadow: 2px 2px 20px 1px rgb(47, 214, 236);
     border: none;
     cursor: pointer;
+    margin-top: 15px;
     
 }
 form{
