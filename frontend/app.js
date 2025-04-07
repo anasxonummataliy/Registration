@@ -1,20 +1,39 @@
-document.getElementById("submitBtn").addEventListener("click", function (e) {
-        e.preventDefault();
 
-        const form = document.getElementById("registerForm");
-        const formData = new FormData(form);
+form = document.getElementById("register-form");
 
-        fetch("http://localhost:8000/register", {
-            method: "POST",
-            body: formData,
+form.addEventListener('submit', async(e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value,
+        email = document.getElementById('email').value,
+        password = document.getElementById('password').value;
+
+    try {
+    const response = await fetch("http://localhost:8000/registration",{
+        method : "POST",
+        headers : {
+               "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({
+            name : name,
+            email : email,
+            password : password
+
         })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Serverdan javob:", data);
-            alert("Account yaratildi!");
-        })
-        .catch(error => {
-            console.error("Xatolik:", error);
-            alert("Xatolik yuz berdi.");
-        });
     });
+
+    const data = await response.json();
+    if (response.ok){
+        alert("Account created!");
+        console.log(data);  
+    }
+    else{
+        alert("Error" + data.message)
+    }
+}
+    catch(error){
+        console.error("Fetch error" + error);
+        alert("Something went wrong");
+    }
+
+});
