@@ -17,7 +17,7 @@ body {
     margin-top: 50px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 5px 5px 45px 10px  rgba(32, 166, 207, 0.5);
+    box-shadow: 5px 5px 45px 10px rgba(32, 166, 207, 0.5);
 
 }
 
@@ -28,23 +28,27 @@ body {
     width: 60%;
     justify-content: center;
     gap: 30px;
-    
+
 }
-.greet{
+
+.greet {
     text-align: center;
 
 }
-p{
+
+p {
+    margin-top: 10px;
     text-align: center;
     color: rgb(26, 131, 176);
 
-    a{
+    a {
         text-decoration: none;
         color: rgb(0, 204, 255);
-        
+
     }
 }
-button{
+
+button {
     width: 160px;
     height: 40px;
     border-radius: 30px;
@@ -55,15 +59,17 @@ button{
     border: none;
     cursor: pointer;
     margin-top: 15px;
-    
+
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-label{
+
+label {
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -73,24 +79,29 @@ label{
     align-items: center;
     box-shadow: 2px 2px 15px rgb(47, 214, 236);
 }
-i{
+
+i {
     color: rgb(47, 214, 236);
     font-size: 20px;
 }
-input{
+
+input {
     border: none;
     width: 90%;
     font-size: large;
     text-decoration: none;
     color: rgb(47, 214, 236);
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
-input::placeholder{
-    color: rgb(47, 214, 236); 
+
+input::placeholder {
+    color: rgb(47, 214, 236);
     font-weight: 300;
 }
+
 .child2 {
     display: flex;
     flex-direction: column;
@@ -99,7 +110,8 @@ input::placeholder{
     justify-content: center;
     background-color: rgb(47, 214, 236);
 
-   h1,  p{
+    h1,
+    p {
         color: white;
     }
 }

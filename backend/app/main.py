@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from app.api.regis import router as regis_router
+from app.api.login import router as login_router
 from app.database.base import create_db_and_tables
 
 @asynccontextmanager
@@ -21,10 +22,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Frontend domeni
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 app.include_router(regis_router)
+app.include_router(login_router)

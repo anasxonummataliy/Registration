@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <div class="child1">
+            <h1 class="greet">Hello, friend!</h1>
+            <form id="register-form">
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                </label>
+                <br>
+                <label>
+                    <i class="fa-solid fa-envelope-open"></i>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                </label>
+                <br>
+                <label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </label>
+                <p style="padding-top: 15px;">
+                    <i class="fa-regular fa-circle-check"></i> I've read and agree to <a href="#">Terms & Conditions</a>
+                </p>
+                <button type="submit">CREATE ACCOUNT</button>
+                <p>Already have an account? <a href="../log in/index.html">Sign in</a></p>
+            </form>
+        </div>
+        <div class="child2">
+            <h1>Glad to see You!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
