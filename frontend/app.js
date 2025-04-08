@@ -48,7 +48,7 @@ form.addEventListener('submit', async (e) => {
             alert(`Registration successful! User ID: ${data.user_id}`);
             form.reset(); // Formani tozalash
             // Agar login sahifangiz bo'lsa, bu yerga yo'naltirish qo'shishingiz mumkin
-            // window.location.href = "/login.html";
+            // window.location.href = "login.html";
         } else {
             console.error("Error:", data);
             alert(`Error: ${data.detail || data.message || "Unknown error"}`);
