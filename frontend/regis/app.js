@@ -42,9 +42,8 @@ form.addEventListener('submit', async (e) => {
 
         const data = await response.json();
         if (response.ok) {
-            console.log("Success:", data);
-            alert(`Registration successful! User ID: ${data.user_id}`);
-            window.location.href == "../log in/index.html"
+            console.log("Success:", data, data.user_id);
+            window.location.href = "../user-page/index.html";
         } else {
             alert(`Error: ${data.detail || data.message || "Unknown error"}`);
         }
